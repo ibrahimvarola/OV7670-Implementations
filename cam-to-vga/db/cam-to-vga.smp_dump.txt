@@ -1,0 +1,12 @@
+
+State Machine - |top_controller|OV7670Controller:INST_CONTROLLER|SCCBMaster:INST_I2C|SStateWriteBase
+Name SStateWriteBase.stop SStateWriteBase.data_dc SStateWriteBase.send_data SStateWriteBase.reg_dc SStateWriteBase.send_reg SStateWriteBase.addr_dc SStateWriteBase.send_addr SStateWriteBase.start_condition SStateWriteBase.idle 
+SStateWriteBase.idle 0 0 0 0 0 0 0 0 0 
+SStateWriteBase.start_condition 0 0 0 0 0 0 0 1 1 
+SStateWriteBase.send_addr 0 0 0 0 0 0 1 0 1 
+SStateWriteBase.addr_dc 0 0 0 0 0 1 0 0 1 
+SStateWriteBase.send_reg 0 0 0 0 1 0 0 0 1 
+SStateWriteBase.reg_dc 0 0 0 1 0 0 0 0 1 
+SStateWriteBase.send_data 0 0 1 0 0 0 0 0 1 
+SStateWriteBase.data_dc 0 1 0 0 0 0 0 0 1 
+SStateWriteBase.stop 1 0 0 0 0 0 0 0 1 

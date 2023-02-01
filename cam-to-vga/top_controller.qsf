@@ -1,0 +1,169 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 2022  Intel Corporation. All rights reserved.
+# Your use of Intel Corporation's design tools, logic functions 
+# and other software and tools, and any partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Intel Program License 
+# Subscription Agreement, the Intel Quartus Prime License Agreement,
+# the Intel FPGA IP License Agreement, or other applicable license
+# agreement, including, without limitation, that your use is for
+# the sole purpose of programming logic devices manufactured by
+# Intel and sold by Intel or its authorized distributors.  Please
+# refer to the applicable agreement for further details, at
+# https://fpgasoftware.intel.com/eula.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus Prime
+# Version 22.1std.0 Build 915 10/25/2022 SC Standard Edition
+# Date created = 10:09:12  January 30, 2023
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		top_controller_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Intel recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus Prime software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+set_global_assignment -name FAMILY "Cyclone IV E"
+set_global_assignment -name DEVICE EP4CE115F29C7
+set_global_assignment -name TOP_LEVEL_ENTITY top_controller
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION 22.1STD.0
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "10:09:12  JANUARY 30, 2023"
+set_global_assignment -name LAST_QUARTUS_VERSION "22.1std.0 Standard Edition"
+set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 1
+set_global_assignment -name NOMINAL_CORE_SUPPLY_VOLTAGE 1.2V
+set_global_assignment -name EDA_SIMULATION_TOOL "Questa Intel FPGA (VHDL)"
+set_global_assignment -name EDA_TIME_SCALE "1 ps" -section_id eda_simulation
+set_global_assignment -name EDA_OUTPUT_DATA_FORMAT VHDL -section_id eda_simulation
+set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_board_design_timing
+set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_board_design_symbol
+set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_board_design_signal_integrity
+set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_board_design_boundary_scan
+set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
+set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name QIP_FILE ip/pll.qip
+set_global_assignment -name VHDL_FILE src/RAMReader.vhd
+set_global_assignment -name VHDL_FILE src/OV7670FrameBuffer.vhd
+set_global_assignment -name VHDL_FILE src/OV7670Capture.vhd
+set_global_assignment -name VHDL_FILE src/vga_controller.vhd
+set_global_assignment -name VHDL_FILE src/SCCBRegisterTable.vhd -hdl_version VHDL_2008
+set_global_assignment -name VHDL_FILE src/SCCBMaster.vhd -hdl_version VHDL_2008
+set_global_assignment -name VHDL_FILE src/top_controller.vhd
+set_global_assignment -name VHDL_FILE src/OV7670Controller.vhd
+set_global_assignment -name QIP_FILE ip/DualPortRAM.qip
+set_location_assignment PIN_AB22 -to PICamData[7]
+set_location_assignment PIN_AC15 -to PICamData[6]
+set_location_assignment PIN_AB21 -to PICamData[5]
+set_location_assignment PIN_Y17 -to PICamData[4]
+set_location_assignment PIN_AC21 -to PICamData[3]
+set_location_assignment PIN_Y16 -to PICamData[2]
+set_location_assignment PIN_AD21 -to PICamData[1]
+set_location_assignment PIN_AE16 -to PICamData[0]
+set_location_assignment PIN_AC22 -to PICamHREF
+set_location_assignment PIN_AC19 -to PICamPCLK
+set_location_assignment PIN_AF24 -to POCamSIOC
+set_location_assignment PIN_AE21 -to PIOCamSIOD
+set_location_assignment PIN_AF25 -to PICamVSYNC
+set_location_assignment PIN_Y2 -to PIClock
+set_location_assignment PIN_M23 -to PIResendCfg
+set_location_assignment PIN_M21 -to PIReset
+set_location_assignment PIN_E21 -to POCfgFinished
+set_location_assignment PIN_F11 -to POVGABlank
+set_location_assignment PIN_B10 -to POVGABlue[7]
+set_location_assignment PIN_A10 -to POVGABlue[6]
+set_location_assignment PIN_C11 -to POVGABlue[5]
+set_location_assignment PIN_B11 -to POVGABlue[4]
+set_location_assignment PIN_A11 -to POVGABlue[3]
+set_location_assignment PIN_C12 -to POVGABlue[2]
+set_location_assignment PIN_D11 -to POVGABlue[1]
+set_location_assignment PIN_D12 -to POVGABlue[0]
+set_location_assignment PIN_A12 -to POVGAClock
+set_location_assignment PIN_G8 -to POVGAGreen[7]
+set_location_assignment PIN_G11 -to POVGAGreen[6]
+set_location_assignment PIN_F8 -to POVGAGreen[5]
+set_location_assignment PIN_H12 -to POVGAGreen[4]
+set_location_assignment PIN_C8 -to POVGAGreen[3]
+set_location_assignment PIN_B8 -to POVGAGreen[2]
+set_location_assignment PIN_F10 -to POVGAGreen[1]
+set_location_assignment PIN_C9 -to POVGAGreen[0]
+set_location_assignment PIN_G13 -to POVGAHSync
+set_location_assignment PIN_E12 -to POVGARed[7]
+set_location_assignment PIN_E11 -to POVGARed[6]
+set_location_assignment PIN_D10 -to POVGARed[5]
+set_location_assignment PIN_F12 -to POVGARed[4]
+set_location_assignment PIN_G10 -to POVGARed[3]
+set_location_assignment PIN_J12 -to POVGARed[2]
+set_location_assignment PIN_H8 -to POVGARed[1]
+set_location_assignment PIN_H10 -to POVGARed[0]
+set_location_assignment PIN_C10 -to POVGASync
+set_location_assignment PIN_C13 -to POVGAVSync
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to PIClock
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to PICamData[7]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to PICamData[6]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to PICamData[5]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to PICamData[4]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to PICamData[3]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to PICamData[2]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to PICamData[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to PICamData[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to PICamHREF
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to PICamPCLK
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to PICamVSYNC
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to PIOCamSIOD
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to POVGABlank
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to POVGABlue[7]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to POVGABlue[6]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to POVGABlue[5]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to POVGABlue[4]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to POVGABlue[3]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to POVGABlue[2]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to POVGABlue[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to POVGABlue[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to POVGAClock
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to POVGAGreen[7]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to POVGAGreen[6]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to POVGAGreen[5]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to POVGAGreen[4]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to POVGAGreen[3]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to POVGAGreen[2]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to POVGAGreen[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to POVGAGreen[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to POVGAHSync
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to POVGARed[7]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to POVGARed[6]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to POVGARed[5]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to POVGARed[4]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to POVGARed[3]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to POVGARed[2]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to POVGARed[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to POVGARed[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to POVGASync
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to POVGAVSync
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to POCamSIOC
+set_global_assignment -name VHDL_FILE src/VGA.vhd
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to POCamPWDN
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to POCamReset
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to POCamXCLK
+set_location_assignment PIN_AD19 -to POCamPWDN
+set_location_assignment PIN_AF15 -to POCamReset
+set_location_assignment PIN_AF16 -to POCamXCLK
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

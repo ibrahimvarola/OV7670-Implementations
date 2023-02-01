@@ -1,0 +1,185 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "POCfgFinished",
+					"strict" : false
+				},
+				{
+					"name" : "POVGAHSync",
+					"strict" : false
+				},
+				{
+					"name" : "POVGAVSync",
+					"strict" : false
+				},
+				{
+					"name" : "POVGARed[0]",
+					"strict" : false
+				},
+				{
+					"name" : "POVGARed[1]",
+					"strict" : false
+				},
+				{
+					"name" : "POVGARed[2]",
+					"strict" : false
+				},
+				{
+					"name" : "POVGARed[3]",
+					"strict" : false
+				},
+				{
+					"name" : "POVGARed[4]",
+					"strict" : false
+				},
+				{
+					"name" : "POVGARed[5]",
+					"strict" : false
+				},
+				{
+					"name" : "POVGARed[6]",
+					"strict" : false
+				},
+				{
+					"name" : "POVGARed[7]",
+					"strict" : false
+				},
+				{
+					"name" : "POVGAGreen[0]",
+					"strict" : false
+				},
+				{
+					"name" : "POVGAGreen[1]",
+					"strict" : false
+				},
+				{
+					"name" : "POVGAGreen[2]",
+					"strict" : false
+				},
+				{
+					"name" : "POVGAGreen[3]",
+					"strict" : false
+				},
+				{
+					"name" : "POVGAGreen[4]",
+					"strict" : false
+				},
+				{
+					"name" : "POVGAGreen[5]",
+					"strict" : false
+				},
+				{
+					"name" : "POVGAGreen[6]",
+					"strict" : false
+				},
+				{
+					"name" : "POVGAGreen[7]",
+					"strict" : false
+				},
+				{
+					"name" : "POVGABlue[0]",
+					"strict" : false
+				},
+				{
+					"name" : "POVGABlue[1]",
+					"strict" : false
+				},
+				{
+					"name" : "POVGABlue[2]",
+					"strict" : false
+				},
+				{
+					"name" : "POVGABlue[3]",
+					"strict" : false
+				},
+				{
+					"name" : "POVGABlue[4]",
+					"strict" : false
+				},
+				{
+					"name" : "POVGABlue[5]",
+					"strict" : false
+				},
+				{
+					"name" : "POVGABlue[6]",
+					"strict" : false
+				},
+				{
+					"name" : "POVGABlue[7]",
+					"strict" : false
+				},
+				{
+					"name" : "POVGABlank",
+					"strict" : false
+				},
+				{
+					"name" : "POCamXCLK",
+					"strict" : false
+				},
+				{
+					"name" : "POCamSIOC",
+					"strict" : false
+				},
+				{
+					"name" : "PIOCamSIOD",
+					"strict" : false
+				},
+				{
+					"name" : "PIReset",
+					"strict" : false
+				},
+				{
+					"name" : "PICamPCLK",
+					"strict" : false
+				},
+				{
+					"name" : "PIResendCfg",
+					"strict" : false
+				},
+				{
+					"name" : "PICamHREF",
+					"strict" : false
+				},
+				{
+					"name" : "PICamVSYNC",
+					"strict" : false
+				},
+				{
+					"name" : "PICamData[7]",
+					"strict" : false
+				},
+				{
+					"name" : "PICamData[1]",
+					"strict" : false
+				},
+				{
+					"name" : "PICamData[2]",
+					"strict" : false
+				},
+				{
+					"name" : "PICamData[3]",
+					"strict" : false
+				},
+				{
+					"name" : "PICamData[4]",
+					"strict" : false
+				},
+				{
+					"name" : "PICamData[5]",
+					"strict" : false
+				},
+				{
+					"name" : "PICamData[6]",
+					"strict" : false
+				},
+				{
+					"name" : "PICamData[0]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

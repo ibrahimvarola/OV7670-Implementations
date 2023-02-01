@@ -1,0 +1,180 @@
+entity top_controller is
+    port(
+        PIClock         :   in  std_logic;
+        PIReset         :   in  std_logic;
+        PIResendCfg     :   in  std_logic;
+        POCfgFinished   :   out std_logic;
+        
+        POVGAClock      :   out     std_logic;
+        POVGAHSync      :   out     std_logic;
+        POVGAVSync      :   out     std_logic;
+        POVGARed        :   out     std_logic_vector(7 downto 0);
+        POVGAGreen      :   out     std_logic_vector(7 downto 0);
+        POVGABlue       :   out     std_logic_vector(7 downto 0);
+        POVGABlank      :   out     std_logic;
+        POVGASync       :   out     std_logic;
+
+        PICamPCLK		:	in		std_logic;
+        PICamVSYNC		:	in		std_logic;
+        PICamHREF		:	in		std_logic;
+        PICamData		:	in		std_logic_vector(7 downto 0);
+        PICamXCLK		:	out     std_logic;
+        PICamPWDN		:	out     std_logic;
+        PICamReset		:	out     std_logic;
+        POCamSIOC		:	out 	std_logic;
+        PIOCamSIOD		:	inout	std_logic
+    );
+end entity;
+
+architecture Behavioral of top_controller is
+    signal  SResendCfg      :   std_logic                       :=  '0';
+    signal  SCfgFinished    :   std_logic                       :=  '0';
+
+    signal  SVGAClock       :   std_logic                       :=  '0';
+    signal  SVGAHSync       :   std_logic                       :=  '0';
+    signal  SVGAVSync       :   std_logic                       :=  '0';
+    signal  SVGARed         :   std_logic_vector(7 downto 0)    :=  (others => '0');
+    signal  SVGAGreen       :   std_logic_vector(7 downto 0)    :=  (others => '0');
+    signal  SVGABlue        :   std_logic_vector(7 downto 0)    :=  (others => '0');
+    signal  SVGABlank       :   std_logic                       :=  '0';
+    signal  SVGASync        :   std_logic                       :=  '0';
+
+    signal  SCamPCLK        :   std_logic                       :=  '0';
+    signal  SCamVSYNC       :   std_logic                       :=  '0';
+    signal  SCamHREF        :   std_logic                       :=  '0';
+    signal  SCamData        :   std_logic_vector(7 downto 0)    :=  (others => '0)
+    signal  SCamXCLK        :   std_logic                       :=  '0';
+    signal  SCamPWDN        :   std_logic                       :=  '0';
+    signal  SCamReset       :   std_logic                       :=  '0';
+    signal  SCamSIOC        :   std_logic                       :=  '0';
+    signal  SCamSIOD        :   std_logic                       :=  '0';
+
+    signal  S50MHzClk        :   std_logic                      := '0';
+    signal  S25MHzClk        :   std_logic                      := '0';    
+
+    signal  SDataOut         :   std_logic_vector(11 downto 0)  := (others => '0');
+    signal  SWriteEnable     :   std_logic                      := '0';
+    signal  SReadAddress     :   std_logic_vector(16 downto 0)  := (others => '0');
+    signal  SWriteAddress    :   std_logic_vector(16 downto 0)  := (others => '0');
+    signal  SRAMReadData     :   std_logic_vector(11 downto 0)  := (others => '0');
+    signal  SDisplayEnable   :   std_logic                      := '0';
+
+    component pll is
+	    PORT
+	    (
+	    	inclk0		: IN STD_LOGIC  := '0';
+	    	c0		: OUT STD_LOGIC ;
+	    	c1		: OUT STD_LOGIC 
+	    );
+    end component;
+
+    component OV7670Controller is
+        port (
+            PIClock       : in std_logic; --  FPGA SYS CLOCK (50 MHz)
+            PIReset       : in std_logic;
+            PITrig        : in std_logic;
+            POCfgFinished : out std_logic;
+            POCamReset    : out std_logic;
+            POPWDN        : out std_logic;
+            POXCLK        : out std_logic; --  OV7670 MAIN CLOCK (25 MHz)
+            PIOSIOD       : inout std_logic;
+            PIOSIOC       : out std_logic;
+        );
+    end component;
+
+    component OV7670Capture is
+        port(
+            PIPCLK          :   in  std_logic;
+            PIReset         :   in  std_logic;
+            PICfgFinished   :   in  std_logic;
+            PIVSYNC			:   in  std_logic;
+            PIHREF          :   in  std_logic;
+            PIData          :   in  std_logic_vector(7 downto 0);
+            PODataOut       :   out std_logic_vector(11 downto 0);
+            PORAMWriteAddr  :   out std_logic_vector(16 downto 0);
+            POWriteEnable   :   out std_logic
+        );
+    
+    end component;
+
+    component OV7670FrameBuffer is
+        port(
+            PIClock					:	in	std_logic;
+            PIReset					:	in	std_logic;
+            PICfgFinished   		:   in  std_logic;
+            PIWriteClock			:	in	std_logic;
+            PIWriteEnable			:	in	std_logic;
+            PIWriteAddress			:	in	std_logic_vector(16 downto 0);
+            PIWriteData				:	in	std_logic_vector(11 downto 0);
+            PIReadClock				:	in	std_logic;
+            PIReadAddress			:	in	std_logic_vector(16 downto 0);
+            POReadData				:	out	std_logic_vector(11 downto 0)
+        );
+    end component;
+
+    component RAMReader is
+        port(
+            PIClock             :   in  std_logic;
+            PIReset             :   in  std_logic;
+            PICfgFinished       :   in  std_logic;
+            PIVSYNC             :   in  std_logic;
+            PIDisplayEnable     :   in  std_logic;
+            PIRAMReadData       :   in  std_logic_vector(11 downto 0);
+            PORAMReadAddr       :   out std_logic_vector(16 downto 0);
+            PORed               :   out std_logic_vector(7 downto 0);
+            POGreen             :   out std_logic_vector(7 downto 0);
+            POBlue              :   out std_logic_vector(7 downto 0)
+        );
+    
+    end component;
+
+    component VGAController is
+        generic(
+            GHPulse			: integer	:= 208;  
+            GHBackPorch		: integer	:= 336;  
+            GHPixels		: integer	:= 1920; 
+            GHFrontPorch	: integer	:= 128;  
+            GHPolarity		: std_logic	:= '0';
+            GVPulse			: integer	:= 3;    
+            GVBackPorch		: integer	:= 38;   
+            GVPixels		: integer	:= 1200; 
+            GVFrontPorch	: integer	:= 1;    
+            GVPolarity		: std_logic := '1'
+        );
+        port(
+            PIClock			:	in	std_logic;
+            PIReset			:	in	std_logic;
+            POHSync			:	out	std_logic;
+            POVSync			:	out	std_logic;
+            PODisplayEnable	:	out	std_logic;
+            POColumn		:	out	integer;
+            PORow			:	out	integer;
+            POBlank			:	out	std_logic;
+            POSync			:	out	std_logic
+        );
+    end component;
+
+begin
+    SResendCfg      <=  PIResendCfg;
+    POCfgFinished   <=  SCfgFinished;
+        
+    POVGAClock      <=  SVGAClock;   
+    POVGAHSync      <=  SVGAHSync;   
+    POVGAVSync      <=  SVGAVSync;   
+    POVGARed        <=  SVGARed;     
+    POVGAGreen      <=  SVGAGreen;   
+    POVGABlue       <=  SVGABlue;    
+    POVGABlank      <=  SVGABlank;   
+    POVGASync       <=  SVGASync;    
+
+    SCamPCLK        <=  PICamPCLK;
+    SCamVSYNC       <=  PICamVSYNC;
+    SCamHREF	    <=  PICamHREF;
+    SCamData	    <=  PICamData;
+    PICamXCLK       <=  SCamXCLK;
+    PICamPWDN       <=  SCamPWDN;
+    PICamReset      <=  SCamReset;
+    PIOCamSIOC      <=  SCamSIOC;
+    PIOCamSIOD      <=  SCamSIOD;
+
+end architecture;
