@@ -23,26 +23,27 @@ architecture Behavioral of RAMReader is
     signal  SDisplayEnable      :   std_logic                               :=  '0';
     signal  SRAMReadData        :   std_logic_vector(11 downto 0)           :=  (others => '0');
     signal  SRAMReadAddr        :   std_logic_vector(PORAMReadAddr'range)   :=  (others => '0');
-    signal  SRed                :   std_logic_vector(7 downto 0)            :=  (others => '0');
-    signal  SGreen              :   std_logic_vector(7 downto 0)            :=  (others => '0');
-    signal  SBlue               :   std_logic_vector(7 downto 0)            :=  (others => '0');
+    -- signal  SRed                :   std_logic_vector(7 downto 0)            :=  (others => '0');
+    -- signal  SGreen              :   std_logic_vector(7 downto 0)            :=  (others => '0');
+    -- signal  SBlue               :   std_logic_vector(7 downto 0)            :=  (others => '0');
 begin
     SVSYNC              <=  PIVSYNC;
     SDisplayEnable      <=  PIDisplayEnable;      
     SRAMReadData        <=  PIRAMReadData;
     PORAMReadAddr       <=  SRAMReadAddr;
-    PORed               <=  SRed;        
-    POGreen             <=  SGreen;      
-    POBlue              <=  SBlue;       
+    -- PORed               <=  SRed;        
+    -- POGreen             <=  SGreen;      
+    -- POBlue              <=  SBlue;       
 
-    SRed            <=  SRAMReadData(11 downto 8) & SRAMReadData(11 downto 8) when SDisplayEnable = '1' else
-                        (others => '0');
+    PORed       <=  PIRAMReadData(11 downto 8) & PIRAMReadData(11 downto 8) when SDisplayEnable = '1' 
+                    else (others => '0');
 
-    SGreen          <=  SRAMReadData(7 downto 4) & SRAMReadData(7 downto 4) when SDisplayEnable = '1' else
-                        (others => '0');
+    POGreen     <=  PIRAMReadData(7 downto 4) & PIRAMReadData(7 downto 4) when SDisplayEnable = '1' 
+                    else (others => '0');
 
-    SBlue           <=  SRAMReadData(3 downto 0) & SRAMReadData(3 downto 0) when SDisplayEnable = '1' else
-                        (others => '0');
+    POBlue      <=  PIRAMReadData(3 downto 0) & SRAMReadData(3 downto 0) when SDisplayEnable = '1' 
+                    else (others => '0');
+
 
     ADDR_GENERATOR : process (PIClock, PIReset)
     begin

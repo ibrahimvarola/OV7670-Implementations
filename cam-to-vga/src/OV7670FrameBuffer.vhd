@@ -5,8 +5,6 @@ use IEEE.NUMERIC_STD.all;
 
 entity OV7670FrameBuffer is
 	port(
-		PIClock					:	in	std_logic;
-		PIReset					:	in	std_logic;
 		PIWriteClock			:	in	std_logic;
 		PIWriteEnable			:	in	std_logic;
 		PIWriteAddress			:	in	std_logic_vector(16 downto 0);

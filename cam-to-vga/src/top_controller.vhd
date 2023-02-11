@@ -104,8 +104,6 @@ architecture Behavioral of top_controller is
 
     component OV7670FrameBuffer is
         port(
-            PIClock					:	in	std_logic;
-            PIReset					:	in	std_logic;
             PIWriteClock			:	in	std_logic;
             PIWriteEnable			:	in	std_logic;
             PIWriteAddress			:	in	std_logic_vector(16 downto 0);
@@ -115,7 +113,8 @@ architecture Behavioral of top_controller is
             POReadData				:	out	std_logic_vector(11 downto 0)
         );
     end component;
-
+    
+    
     component RAMReader is
         port(
             PIClock             :   in  std_logic;
@@ -131,6 +130,7 @@ architecture Behavioral of top_controller is
     
     end component;
 
+    
     component VGA is
         Port ( 
             CLK25 : in  STD_LOGIC;         -- Horloge d'entre de 25 MHz              
@@ -228,8 +228,6 @@ begin
 
     INST_FRAMEBUFF : OV7670FrameBuffer
         port map(
-            PIClock         =>  S50MHzClk,
-            PIReset		    =>  PIReset,
             PIWriteClock    =>  SCamPCLK,
             PIWriteEnable   =>  SWriteEnable,
             PIWriteAddress  =>  SWriteAddress,
@@ -238,6 +236,8 @@ begin
             PIReadAddress   =>  SReadAddress,
             POReadData      =>  SRAMReadData
         );
+    
+
 
     INST_READER : RAMReader
         port map(
@@ -251,6 +251,8 @@ begin
             POGreen         =>  SVGAGreen,
             POBlue          =>  SVGABlue 
         );
+
+    
 
     INST_VGA : VGA
         port map(

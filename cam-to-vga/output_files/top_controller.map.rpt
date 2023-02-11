@@ -1,5 +1,5 @@
 Analysis & Synthesis report for top_controller
-Wed Feb  1 09:50:09 2023
+Wed Feb  1 13:32:00 2023
 Quartus Prime Version 22.1std.0 Build 915 10/25/2022 SC Standard Edition
 
 
@@ -59,7 +59,7 @@ https://fpgasoftware.intel.com/eula.
 +-----------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                            ;
 +------------------------------------+----------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Wed Feb  1 09:50:09 2023              ;
+; Analysis & Synthesis Status        ; Successful - Wed Feb  1 13:32:00 2023              ;
 ; Quartus Prime Version              ; 22.1std.0 Build 915 10/25/2022 SC Standard Edition ;
 ; Revision Name                      ; top_controller                                     ;
 ; Top-level Entity Name              ; top_controller                                     ;
@@ -181,40 +181,40 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                                           ;
-+----------------------------------+-----------------+------------------------------+--------------------------------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                                                       ; Library ;
-+----------------------------------+-----------------+------------------------------+--------------------------------------------------------------------------------------------------------------------+---------+
-; ip/pll.vhd                       ; yes             ; User Wizard-Generated File   ; /home/ibrahimvarola/OneDrive/bitirme_proje/programlar/quartus/implementations/cam-to-vga/ip/pll.vhd                ;         ;
-; src/RAMReader.vhd                ; yes             ; User VHDL File               ; /home/ibrahimvarola/OneDrive/bitirme_proje/programlar/quartus/implementations/cam-to-vga/src/RAMReader.vhd         ;         ;
-; src/OV7670FrameBuffer.vhd        ; yes             ; User VHDL File               ; /home/ibrahimvarola/OneDrive/bitirme_proje/programlar/quartus/implementations/cam-to-vga/src/OV7670FrameBuffer.vhd ;         ;
-; src/OV7670Capture.vhd            ; yes             ; User VHDL File               ; /home/ibrahimvarola/OneDrive/bitirme_proje/programlar/quartus/implementations/cam-to-vga/src/OV7670Capture.vhd     ;         ;
-; src/SCCBRegisterTable.vhd        ; yes             ; User VHDL File               ; /home/ibrahimvarola/OneDrive/bitirme_proje/programlar/quartus/implementations/cam-to-vga/src/SCCBRegisterTable.vhd ;         ;
-; src/SCCBMaster.vhd               ; yes             ; User VHDL File               ; /home/ibrahimvarola/OneDrive/bitirme_proje/programlar/quartus/implementations/cam-to-vga/src/SCCBMaster.vhd        ;         ;
-; src/top_controller.vhd           ; yes             ; User VHDL File               ; /home/ibrahimvarola/OneDrive/bitirme_proje/programlar/quartus/implementations/cam-to-vga/src/top_controller.vhd    ;         ;
-; src/OV7670Controller.vhd         ; yes             ; User VHDL File               ; /home/ibrahimvarola/OneDrive/bitirme_proje/programlar/quartus/implementations/cam-to-vga/src/OV7670Controller.vhd  ;         ;
-; ip/DualPortRAM.vhd               ; yes             ; User Wizard-Generated File   ; /home/ibrahimvarola/OneDrive/bitirme_proje/programlar/quartus/implementations/cam-to-vga/ip/DualPortRAM.vhd        ;         ;
-; src/VGA.vhd                      ; yes             ; User VHDL File               ; /home/ibrahimvarola/OneDrive/bitirme_proje/programlar/quartus/implementations/cam-to-vga/src/VGA.vhd               ;         ;
-; altpll.tdf                       ; yes             ; Megafunction                 ; /home/ibrahimvarola/intelFPGA/22.1std/quartus/libraries/megafunctions/altpll.tdf                                   ;         ;
-; aglobal221.inc                   ; yes             ; Megafunction                 ; /home/ibrahimvarola/intelFPGA/22.1std/quartus/libraries/megafunctions/aglobal221.inc                               ;         ;
-; stratix_pll.inc                  ; yes             ; Megafunction                 ; /home/ibrahimvarola/intelFPGA/22.1std/quartus/libraries/megafunctions/stratix_pll.inc                              ;         ;
-; stratixii_pll.inc                ; yes             ; Megafunction                 ; /home/ibrahimvarola/intelFPGA/22.1std/quartus/libraries/megafunctions/stratixii_pll.inc                            ;         ;
-; cycloneii_pll.inc                ; yes             ; Megafunction                 ; /home/ibrahimvarola/intelFPGA/22.1std/quartus/libraries/megafunctions/cycloneii_pll.inc                            ;         ;
-; db/pll_altpll.v                  ; yes             ; Auto-Generated Megafunction  ; /home/ibrahimvarola/OneDrive/bitirme_proje/programlar/quartus/implementations/cam-to-vga/db/pll_altpll.v           ;         ;
-; altsyncram.tdf                   ; yes             ; Megafunction                 ; /home/ibrahimvarola/intelFPGA/22.1std/quartus/libraries/megafunctions/altsyncram.tdf                               ;         ;
-; stratix_ram_block.inc            ; yes             ; Megafunction                 ; /home/ibrahimvarola/intelFPGA/22.1std/quartus/libraries/megafunctions/stratix_ram_block.inc                        ;         ;
-; lpm_mux.inc                      ; yes             ; Megafunction                 ; /home/ibrahimvarola/intelFPGA/22.1std/quartus/libraries/megafunctions/lpm_mux.inc                                  ;         ;
-; lpm_decode.inc                   ; yes             ; Megafunction                 ; /home/ibrahimvarola/intelFPGA/22.1std/quartus/libraries/megafunctions/lpm_decode.inc                               ;         ;
-; a_rdenreg.inc                    ; yes             ; Megafunction                 ; /home/ibrahimvarola/intelFPGA/22.1std/quartus/libraries/megafunctions/a_rdenreg.inc                                ;         ;
-; altrom.inc                       ; yes             ; Megafunction                 ; /home/ibrahimvarola/intelFPGA/22.1std/quartus/libraries/megafunctions/altrom.inc                                   ;         ;
-; altram.inc                       ; yes             ; Megafunction                 ; /home/ibrahimvarola/intelFPGA/22.1std/quartus/libraries/megafunctions/altram.inc                                   ;         ;
-; altdpram.inc                     ; yes             ; Megafunction                 ; /home/ibrahimvarola/intelFPGA/22.1std/quartus/libraries/megafunctions/altdpram.inc                                 ;         ;
-; db/altsyncram_iip3.tdf           ; yes             ; Auto-Generated Megafunction  ; /home/ibrahimvarola/OneDrive/bitirme_proje/programlar/quartus/implementations/cam-to-vga/db/altsyncram_iip3.tdf    ;         ;
-; db/decode_rsa.tdf                ; yes             ; Auto-Generated Megafunction  ; /home/ibrahimvarola/OneDrive/bitirme_proje/programlar/quartus/implementations/cam-to-vga/db/decode_rsa.tdf         ;         ;
-; db/decode_k8a.tdf                ; yes             ; Auto-Generated Megafunction  ; /home/ibrahimvarola/OneDrive/bitirme_proje/programlar/quartus/implementations/cam-to-vga/db/decode_k8a.tdf         ;         ;
-; db/mux_mob.tdf                   ; yes             ; Auto-Generated Megafunction  ; /home/ibrahimvarola/OneDrive/bitirme_proje/programlar/quartus/implementations/cam-to-vga/db/mux_mob.tdf            ;         ;
-+----------------------------------+-----------------+------------------------------+--------------------------------------------------------------------------------------------------------------------+---------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                       ;
++----------------------------------+-----------------+------------------------------+------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                                   ; Library ;
++----------------------------------+-----------------+------------------------------+------------------------------------------------------------------------------------------------+---------+
+; ip/pll.vhd                       ; yes             ; User Wizard-Generated File   ; /home/ibrahimvarola/Desktop/github/OV7670-Implementations/cam-to-vga/ip/pll.vhd                ;         ;
+; src/RAMReader.vhd                ; yes             ; User VHDL File               ; /home/ibrahimvarola/Desktop/github/OV7670-Implementations/cam-to-vga/src/RAMReader.vhd         ;         ;
+; src/OV7670FrameBuffer.vhd        ; yes             ; User VHDL File               ; /home/ibrahimvarola/Desktop/github/OV7670-Implementations/cam-to-vga/src/OV7670FrameBuffer.vhd ;         ;
+; src/OV7670Capture.vhd            ; yes             ; User VHDL File               ; /home/ibrahimvarola/Desktop/github/OV7670-Implementations/cam-to-vga/src/OV7670Capture.vhd     ;         ;
+; src/SCCBRegisterTable.vhd        ; yes             ; User VHDL File               ; /home/ibrahimvarola/Desktop/github/OV7670-Implementations/cam-to-vga/src/SCCBRegisterTable.vhd ;         ;
+; src/SCCBMaster.vhd               ; yes             ; User VHDL File               ; /home/ibrahimvarola/Desktop/github/OV7670-Implementations/cam-to-vga/src/SCCBMaster.vhd        ;         ;
+; src/top_controller.vhd           ; yes             ; User VHDL File               ; /home/ibrahimvarola/Desktop/github/OV7670-Implementations/cam-to-vga/src/top_controller.vhd    ;         ;
+; src/OV7670Controller.vhd         ; yes             ; User VHDL File               ; /home/ibrahimvarola/Desktop/github/OV7670-Implementations/cam-to-vga/src/OV7670Controller.vhd  ;         ;
+; ip/DualPortRAM.vhd               ; yes             ; User Wizard-Generated File   ; /home/ibrahimvarola/Desktop/github/OV7670-Implementations/cam-to-vga/ip/DualPortRAM.vhd        ;         ;
+; src/VGA.vhd                      ; yes             ; User VHDL File               ; /home/ibrahimvarola/Desktop/github/OV7670-Implementations/cam-to-vga/src/VGA.vhd               ;         ;
+; altpll.tdf                       ; yes             ; Megafunction                 ; /home/ibrahimvarola/intelFPGA/22.1std/quartus/libraries/megafunctions/altpll.tdf               ;         ;
+; aglobal221.inc                   ; yes             ; Megafunction                 ; /home/ibrahimvarola/intelFPGA/22.1std/quartus/libraries/megafunctions/aglobal221.inc           ;         ;
+; stratix_pll.inc                  ; yes             ; Megafunction                 ; /home/ibrahimvarola/intelFPGA/22.1std/quartus/libraries/megafunctions/stratix_pll.inc          ;         ;
+; stratixii_pll.inc                ; yes             ; Megafunction                 ; /home/ibrahimvarola/intelFPGA/22.1std/quartus/libraries/megafunctions/stratixii_pll.inc        ;         ;
+; cycloneii_pll.inc                ; yes             ; Megafunction                 ; /home/ibrahimvarola/intelFPGA/22.1std/quartus/libraries/megafunctions/cycloneii_pll.inc        ;         ;
+; db/pll_altpll.v                  ; yes             ; Auto-Generated Megafunction  ; /home/ibrahimvarola/Desktop/github/OV7670-Implementations/cam-to-vga/db/pll_altpll.v           ;         ;
+; altsyncram.tdf                   ; yes             ; Megafunction                 ; /home/ibrahimvarola/intelFPGA/22.1std/quartus/libraries/megafunctions/altsyncram.tdf           ;         ;
+; stratix_ram_block.inc            ; yes             ; Megafunction                 ; /home/ibrahimvarola/intelFPGA/22.1std/quartus/libraries/megafunctions/stratix_ram_block.inc    ;         ;
+; lpm_mux.inc                      ; yes             ; Megafunction                 ; /home/ibrahimvarola/intelFPGA/22.1std/quartus/libraries/megafunctions/lpm_mux.inc              ;         ;
+; lpm_decode.inc                   ; yes             ; Megafunction                 ; /home/ibrahimvarola/intelFPGA/22.1std/quartus/libraries/megafunctions/lpm_decode.inc           ;         ;
+; a_rdenreg.inc                    ; yes             ; Megafunction                 ; /home/ibrahimvarola/intelFPGA/22.1std/quartus/libraries/megafunctions/a_rdenreg.inc            ;         ;
+; altrom.inc                       ; yes             ; Megafunction                 ; /home/ibrahimvarola/intelFPGA/22.1std/quartus/libraries/megafunctions/altrom.inc               ;         ;
+; altram.inc                       ; yes             ; Megafunction                 ; /home/ibrahimvarola/intelFPGA/22.1std/quartus/libraries/megafunctions/altram.inc               ;         ;
+; altdpram.inc                     ; yes             ; Megafunction                 ; /home/ibrahimvarola/intelFPGA/22.1std/quartus/libraries/megafunctions/altdpram.inc             ;         ;
+; db/altsyncram_iip3.tdf           ; yes             ; Auto-Generated Megafunction  ; /home/ibrahimvarola/Desktop/github/OV7670-Implementations/cam-to-vga/db/altsyncram_iip3.tdf    ;         ;
+; db/decode_rsa.tdf                ; yes             ; Auto-Generated Megafunction  ; /home/ibrahimvarola/Desktop/github/OV7670-Implementations/cam-to-vga/db/decode_rsa.tdf         ;         ;
+; db/decode_k8a.tdf                ; yes             ; Auto-Generated Megafunction  ; /home/ibrahimvarola/Desktop/github/OV7670-Implementations/cam-to-vga/db/decode_k8a.tdf         ;         ;
+; db/mux_mob.tdf                   ; yes             ; Auto-Generated Megafunction  ; /home/ibrahimvarola/Desktop/github/OV7670-Implementations/cam-to-vga/db/mux_mob.tdf            ;         ;
++----------------------------------+-----------------+------------------------------+------------------------------------------------------------------------------------------------+---------+
 
 
 +-------------------------------------------------------------------------------------------------------------------------------+
@@ -226,9 +226,9 @@ https://fpgasoftware.intel.com/eula.
 ;                                             ;                                                                                 ;
 ; Total combinational functions               ; 511                                                                             ;
 ; Logic element usage by number of LUT inputs ;                                                                                 ;
-;     -- 4 input functions                    ; 327                                                                             ;
-;     -- 3 input functions                    ; 62                                                                              ;
-;     -- <=2 input functions                  ; 122                                                                             ;
+;     -- 4 input functions                    ; 324                                                                             ;
+;     -- 3 input functions                    ; 64                                                                              ;
+;     -- <=2 input functions                  ; 123                                                                             ;
 ;                                             ;                                                                                 ;
 ; Logic elements by mode                      ;                                                                                 ;
 ;     -- normal mode                          ; 440                                                                             ;
@@ -248,8 +248,8 @@ https://fpgasoftware.intel.com/eula.
 ;                                             ;                                                                                 ;
 ; Maximum fan-out node                        ; pll:INST_PLL|altpll:altpll_component|pll_altpll:auto_generated|wire_pll1_clk[0] ;
 ; Maximum fan-out                             ; 349                                                                             ;
-; Total fan-out                               ; 8489                                                                            ;
-; Average fan-out                             ; 8.43                                                                            ;
+; Total fan-out                               ; 8502                                                                            ;
+; Average fan-out                             ; 8.44                                                                            ;
 +---------------------------------------------+---------------------------------------------------------------------------------+
 
 
@@ -375,7 +375,7 @@ Note: All latches listed above may not be present at the end of synthesis due to
 ; Total registers                              ; 204   ;
 ; Number of registers using Synchronous Clear  ; 43    ;
 ; Number of registers using Synchronous Load   ; 1     ;
-; Number of registers using Asynchronous Clear ; 129   ;
+; Number of registers using Asynchronous Clear ; 146   ;
 ; Number of registers using Asynchronous Load  ; 0     ;
 ; Number of registers using Clock Enable       ; 146   ;
 ; Number of registers using Preset             ; 0     ;
@@ -388,7 +388,7 @@ Note: All latches listed above may not be present at the end of synthesis due to
 ; Inverted Register                                               ; Fan out ;
 +-----------------------------------------------------------------+---------+
 ; VGA:INST_VGA|Vcnt[9]                                            ; 5       ;
-; OV7670Controller:INST_CONTROLLER|SCCBMaster:INST_I2C|SSIOCClock ; 26      ;
+; OV7670Controller:INST_CONTROLLER|SCCBMaster:INST_I2C|SSIOCClock ; 25      ;
 ; OV7670Controller:INST_CONTROLLER|SCCBMaster:INST_I2C|SSIOCWrite ; 3       ;
 ; VGA:INST_VGA|Vcnt[3]                                            ; 4       ;
 ; Total number of inverted registers = 4                          ;         ;
@@ -998,8 +998,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ;     CLR SLD           ; 1                           ;
 ;     ENA               ; 30                          ;
 ;     ENA CLR           ; 76                          ;
-;     ENA CLR SCLR      ; 23                          ;
-;     ENA SCLR          ; 17                          ;
+;     ENA CLR SCLR      ; 40                          ;
 ;     plain             ; 28                          ;
 ; cycloneiii_io_obuf    ; 1                           ;
 ; cycloneiii_lcell_comb ; 513                         ;
@@ -1009,14 +1008,14 @@ Note: In order to hide this table in the UI and the text report file, please set
 ;     normal            ; 442                         ;
 ;         0 data inputs ; 2                           ;
 ;         1 data inputs ; 13                          ;
-;         2 data inputs ; 40                          ;
-;         3 data inputs ; 60                          ;
-;         4 data inputs ; 327                         ;
+;         2 data inputs ; 41                          ;
+;         3 data inputs ; 62                          ;
+;         4 data inputs ; 324                         ;
 ; cycloneiii_pll        ; 1                           ;
 ; cycloneiii_ram_block  ; 192                         ;
 ;                       ;                             ;
-; Max LUT depth         ; 6.00                        ;
-; Average LUT depth     ; 3.00                        ;
+; Max LUT depth         ; 5.00                        ;
+; Average LUT depth     ; 2.97                        ;
 +-----------------------+-----------------------------+
 
 
@@ -1035,48 +1034,57 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 22.1std.0 Build 915 10/25/2022 SC Standard Edition
-    Info: Processing started: Wed Feb  1 09:49:58 2023
+    Info: Processing started: Wed Feb  1 13:31:50 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off cam-to-vga -c top_controller
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (12021): Found 2 design units, including 1 entities, in source file src/frame_buffer.vhd
+    Info (12022): Found design unit 1: frame_buffer-SYN File: /home/ibrahimvarola/Desktop/github/OV7670-Implementations/cam-to-vga/src/frame_buffer.vhd Line: 29
+    Info (12023): Found entity 1: frame_buffer File: /home/ibrahimvarola/Desktop/github/OV7670-Implementations/cam-to-vga/src/frame_buffer.vhd Line: 15
+Info (12021): Found 2 design units, including 1 entities, in source file src/RGB.vhd
+    Info (12022): Found design unit 1: RGB-Behavioral File: /home/ibrahimvarola/Desktop/github/OV7670-Implementations/cam-to-vga/src/RGB.vhd Line: 16
+    Info (12023): Found entity 1: RGB File: /home/ibrahimvarola/Desktop/github/OV7670-Implementations/cam-to-vga/src/RGB.vhd Line: 7
+Info (12021): Found 2 design units, including 1 entities, in source file src/address_Generator.vhd
+    Info (12022): Found design unit 1: Address_Generator-Behavioral File: /home/ibrahimvarola/Desktop/github/OV7670-Implementations/cam-to-vga/src/address_Generator.vhd Line: 14
+    Info (12023): Found entity 1: Address_Generator File: /home/ibrahimvarola/Desktop/github/OV7670-Implementations/cam-to-vga/src/address_Generator.vhd Line: 6
 Info (12021): Found 2 design units, including 1 entities, in source file ip/pll.vhd
-    Info (12022): Found design unit 1: pll-SYN File: /home/ibrahimvarola/OneDrive/bitirme_proje/programlar/quartus/implementations/cam-to-vga/ip/pll.vhd Line: 53
-    Info (12023): Found entity 1: pll File: /home/ibrahimvarola/OneDrive/bitirme_proje/programlar/quartus/implementations/cam-to-vga/ip/pll.vhd Line: 43
+    Info (12022): Found design unit 1: pll-SYN File: /home/ibrahimvarola/Desktop/github/OV7670-Implementations/cam-to-vga/ip/pll.vhd Line: 53
+    Info (12023): Found entity 1: pll File: /home/ibrahimvarola/Desktop/github/OV7670-Implementations/cam-to-vga/ip/pll.vhd Line: 43
 Info (12021): Found 2 design units, including 1 entities, in source file src/RAMReader.vhd
-    Info (12022): Found design unit 1: RAMReader-Behavioral File: /home/ibrahimvarola/OneDrive/bitirme_proje/programlar/quartus/implementations/cam-to-vga/src/RAMReader.vhd Line: 21
-    Info (12023): Found entity 1: RAMReader File: /home/ibrahimvarola/OneDrive/bitirme_proje/programlar/quartus/implementations/cam-to-vga/src/RAMReader.vhd Line: 6
+    Info (12022): Found design unit 1: RAMReader-Behavioral File: /home/ibrahimvarola/Desktop/github/OV7670-Implementations/cam-to-vga/src/RAMReader.vhd Line: 21
+    Info (12023): Found entity 1: RAMReader File: /home/ibrahimvarola/Desktop/github/OV7670-Implementations/cam-to-vga/src/RAMReader.vhd Line: 6
 Info (12021): Found 2 design units, including 1 entities, in source file src/OV7670FrameBuffer.vhd
-    Info (12022): Found design unit 1: OV7670FrameBuffer-Behavioral File: /home/ibrahimvarola/OneDrive/bitirme_proje/programlar/quartus/implementations/cam-to-vga/src/OV7670FrameBuffer.vhd Line: 20
-    Info (12023): Found entity 1: OV7670FrameBuffer File: /home/ibrahimvarola/OneDrive/bitirme_proje/programlar/quartus/implementations/cam-to-vga/src/OV7670FrameBuffer.vhd Line: 6
+    Info (12022): Found design unit 1: OV7670FrameBuffer-Behavioral File: /home/ibrahimvarola/Desktop/github/OV7670-Implementations/cam-to-vga/src/OV7670FrameBuffer.vhd Line: 18
+    Info (12023): Found entity 1: OV7670FrameBuffer File: /home/ibrahimvarola/Desktop/github/OV7670-Implementations/cam-to-vga/src/OV7670FrameBuffer.vhd Line: 6
 Info (12021): Found 2 design units, including 1 entities, in source file src/OV7670Capture.vhd
-    Info (12022): Found design unit 1: OV7670Capture-Behavioral File: /home/ibrahimvarola/OneDrive/bitirme_proje/programlar/quartus/implementations/cam-to-vga/src/OV7670Capture.vhd Line: 20
-    Info (12023): Found entity 1: OV7670Capture File: /home/ibrahimvarola/OneDrive/bitirme_proje/programlar/quartus/implementations/cam-to-vga/src/OV7670Capture.vhd Line: 6
+    Info (12022): Found design unit 1: OV7670Capture-Behavioral File: /home/ibrahimvarola/Desktop/github/OV7670-Implementations/cam-to-vga/src/OV7670Capture.vhd Line: 20
+    Info (12023): Found entity 1: OV7670Capture File: /home/ibrahimvarola/Desktop/github/OV7670-Implementations/cam-to-vga/src/OV7670Capture.vhd Line: 6
 Info (12021): Found 2 design units, including 1 entities, in source file src/vga_controller.vhd
-    Info (12022): Found design unit 1: VGAController-Behavioral File: /home/ibrahimvarola/OneDrive/bitirme_proje/programlar/quartus/implementations/cam-to-vga/src/vga_controller.vhd Line: 32
-    Info (12023): Found entity 1: VGAController File: /home/ibrahimvarola/OneDrive/bitirme_proje/programlar/quartus/implementations/cam-to-vga/src/vga_controller.vhd Line: 6
+    Info (12022): Found design unit 1: VGAController-Behavioral File: /home/ibrahimvarola/Desktop/github/OV7670-Implementations/cam-to-vga/src/vga_controller.vhd Line: 32
+    Info (12023): Found entity 1: VGAController File: /home/ibrahimvarola/Desktop/github/OV7670-Implementations/cam-to-vga/src/vga_controller.vhd Line: 6
 Info (12021): Found 2 design units, including 1 entities, in source file src/SCCBRegisterTable.vhd
-    Info (12022): Found design unit 1: SCCBRegisterTable-Behavioral File: /home/ibrahimvarola/OneDrive/bitirme_proje/programlar/quartus/implementations/cam-to-vga/src/SCCBRegisterTable.vhd Line: 28
-    Info (12023): Found entity 1: SCCBRegisterTable File: /home/ibrahimvarola/OneDrive/bitirme_proje/programlar/quartus/implementations/cam-to-vga/src/SCCBRegisterTable.vhd Line: 11
+    Info (12022): Found design unit 1: SCCBRegisterTable-Behavioral File: /home/ibrahimvarola/Desktop/github/OV7670-Implementations/cam-to-vga/src/SCCBRegisterTable.vhd Line: 28
+    Info (12023): Found entity 1: SCCBRegisterTable File: /home/ibrahimvarola/Desktop/github/OV7670-Implementations/cam-to-vga/src/SCCBRegisterTable.vhd Line: 11
 Info (12021): Found 2 design units, including 1 entities, in source file src/SCCBMaster.vhd
-    Info (12022): Found design unit 1: SCCBMaster-Behavioral File: /home/ibrahimvarola/OneDrive/bitirme_proje/programlar/quartus/implementations/cam-to-vga/src/SCCBMaster.vhd Line: 51
-    Info (12023): Found entity 1: SCCBMaster File: /home/ibrahimvarola/OneDrive/bitirme_proje/programlar/quartus/implementations/cam-to-vga/src/SCCBMaster.vhd Line: 31
+    Info (12022): Found design unit 1: SCCBMaster-Behavioral File: /home/ibrahimvarola/Desktop/github/OV7670-Implementations/cam-to-vga/src/SCCBMaster.vhd Line: 51
+    Info (12023): Found entity 1: SCCBMaster File: /home/ibrahimvarola/Desktop/github/OV7670-Implementations/cam-to-vga/src/SCCBMaster.vhd Line: 31
 Info (12021): Found 2 design units, including 1 entities, in source file src/top_controller.vhd
-    Info (12022): Found design unit 1: top_controller-Behavioral File: /home/ibrahimvarola/OneDrive/bitirme_proje/programlar/quartus/implementations/cam-to-vga/src/top_controller.vhd Line: 34
-    Info (12023): Found entity 1: top_controller File: /home/ibrahimvarola/OneDrive/bitirme_proje/programlar/quartus/implementations/cam-to-vga/src/top_controller.vhd Line: 6
+    Info (12022): Found design unit 1: top_controller-Behavioral File: /home/ibrahimvarola/Desktop/github/OV7670-Implementations/cam-to-vga/src/top_controller.vhd Line: 34
+    Info (12023): Found entity 1: top_controller File: /home/ibrahimvarola/Desktop/github/OV7670-Implementations/cam-to-vga/src/top_controller.vhd Line: 6
 Info (12021): Found 2 design units, including 1 entities, in source file src/OV7670Controller.vhd
-    Info (12022): Found design unit 1: OV7670Controller-Behavioral File: /home/ibrahimvarola/OneDrive/bitirme_proje/programlar/quartus/implementations/cam-to-vga/src/OV7670Controller.vhd Line: 20
-    Info (12023): Found entity 1: OV7670Controller File: /home/ibrahimvarola/OneDrive/bitirme_proje/programlar/quartus/implementations/cam-to-vga/src/OV7670Controller.vhd Line: 6
+    Info (12022): Found design unit 1: OV7670Controller-Behavioral File: /home/ibrahimvarola/Desktop/github/OV7670-Implementations/cam-to-vga/src/OV7670Controller.vhd Line: 20
+    Info (12023): Found entity 1: OV7670Controller File: /home/ibrahimvarola/Desktop/github/OV7670-Implementations/cam-to-vga/src/OV7670Controller.vhd Line: 6
 Info (12021): Found 2 design units, including 1 entities, in source file ip/DualPortRAM.vhd
-    Info (12022): Found design unit 1: dualportram-SYN File: /home/ibrahimvarola/OneDrive/bitirme_proje/programlar/quartus/implementations/cam-to-vga/ip/DualPortRAM.vhd Line: 57
-    Info (12023): Found entity 1: DualPortRAM File: /home/ibrahimvarola/OneDrive/bitirme_proje/programlar/quartus/implementations/cam-to-vga/ip/DualPortRAM.vhd Line: 43
+    Info (12022): Found design unit 1: dualportram-SYN File: /home/ibrahimvarola/Desktop/github/OV7670-Implementations/cam-to-vga/ip/DualPortRAM.vhd Line: 57
+    Info (12023): Found entity 1: DualPortRAM File: /home/ibrahimvarola/Desktop/github/OV7670-Implementations/cam-to-vga/ip/DualPortRAM.vhd Line: 43
 Info (12021): Found 2 design units, including 1 entities, in source file src/VGA.vhd
-    Info (12022): Found design unit 1: VGA-Behavioral File: /home/ibrahimvarola/OneDrive/bitirme_proje/programlar/quartus/implementations/cam-to-vga/src/VGA.vhd Line: 21
-    Info (12023): Found entity 1: VGA File: /home/ibrahimvarola/OneDrive/bitirme_proje/programlar/quartus/implementations/cam-to-vga/src/VGA.vhd Line: 9
+    Info (12022): Found design unit 1: VGA-Behavioral File: /home/ibrahimvarola/Desktop/github/OV7670-Implementations/cam-to-vga/src/VGA.vhd Line: 21
+    Info (12023): Found entity 1: VGA File: /home/ibrahimvarola/Desktop/github/OV7670-Implementations/cam-to-vga/src/VGA.vhd Line: 9
 Info (12127): Elaborating entity "top_controller" for the top level hierarchy
-Info (12128): Elaborating entity "pll" for hierarchy "pll:INST_PLL" File: /home/ibrahimvarola/OneDrive/bitirme_proje/programlar/quartus/implementations/cam-to-vga/src/top_controller.vhd Line: 197
-Info (12128): Elaborating entity "altpll" for hierarchy "pll:INST_PLL|altpll:altpll_component" File: /home/ibrahimvarola/OneDrive/bitirme_proje/programlar/quartus/implementations/cam-to-vga/ip/pll.vhd Line: 142
-Info (12130): Elaborated megafunction instantiation "pll:INST_PLL|altpll:altpll_component" File: /home/ibrahimvarola/OneDrive/bitirme_proje/programlar/quartus/implementations/cam-to-vga/ip/pll.vhd Line: 142
-Info (12133): Instantiated megafunction "pll:INST_PLL|altpll:altpll_component" with the following parameter: File: /home/ibrahimvarola/OneDrive/bitirme_proje/programlar/quartus/implementations/cam-to-vga/ip/pll.vhd Line: 142
+Info (12128): Elaborating entity "pll" for hierarchy "pll:INST_PLL" File: /home/ibrahimvarola/Desktop/github/OV7670-Implementations/cam-to-vga/src/top_controller.vhd Line: 225
+Info (12128): Elaborating entity "altpll" for hierarchy "pll:INST_PLL|altpll:altpll_component" File: /home/ibrahimvarola/Desktop/github/OV7670-Implementations/cam-to-vga/ip/pll.vhd Line: 142
+Info (12130): Elaborated megafunction instantiation "pll:INST_PLL|altpll:altpll_component" File: /home/ibrahimvarola/Desktop/github/OV7670-Implementations/cam-to-vga/ip/pll.vhd Line: 142
+Info (12133): Instantiated megafunction "pll:INST_PLL|altpll:altpll_component" with the following parameter: File: /home/ibrahimvarola/Desktop/github/OV7670-Implementations/cam-to-vga/ip/pll.vhd Line: 142
     Info (12134): Parameter "bandwidth_type" = "AUTO"
     Info (12134): Parameter "clk0_divide_by" = "1"
     Info (12134): Parameter "clk0_duty_cycle" = "50"
@@ -1136,22 +1144,22 @@ Info (12133): Instantiated megafunction "pll:INST_PLL|altpll:altpll_component" w
     Info (12134): Parameter "port_extclk3" = "PORT_UNUSED"
     Info (12134): Parameter "width_clock" = "5"
 Info (12021): Found 1 design units, including 1 entities, in source file db/pll_altpll.v
-    Info (12023): Found entity 1: pll_altpll File: /home/ibrahimvarola/OneDrive/bitirme_proje/programlar/quartus/implementations/cam-to-vga/db/pll_altpll.v Line: 30
+    Info (12023): Found entity 1: pll_altpll File: /home/ibrahimvarola/Desktop/github/OV7670-Implementations/cam-to-vga/db/pll_altpll.v Line: 30
 Info (12128): Elaborating entity "pll_altpll" for hierarchy "pll:INST_PLL|altpll:altpll_component|pll_altpll:auto_generated" File: /home/ibrahimvarola/intelFPGA/22.1std/quartus/libraries/megafunctions/altpll.tdf Line: 898
-Info (12128): Elaborating entity "OV7670Controller" for hierarchy "OV7670Controller:INST_CONTROLLER" File: /home/ibrahimvarola/OneDrive/bitirme_proje/programlar/quartus/implementations/cam-to-vga/src/top_controller.vhd Line: 204
-Info (12128): Elaborating entity "SCCBRegisterTable" for hierarchy "OV7670Controller:INST_CONTROLLER|SCCBRegisterTable:INST_REG" File: /home/ibrahimvarola/OneDrive/bitirme_proje/programlar/quartus/implementations/cam-to-vga/src/OV7670Controller.vhd Line: 96
-Warning (10036): Verilog HDL or VHDL warning at SCCBRegisterTable.vhd(36): object "SDone" assigned a value but never read File: /home/ibrahimvarola/OneDrive/bitirme_proje/programlar/quartus/implementations/cam-to-vga/src/SCCBRegisterTable.vhd Line: 36
-Warning (10036): Verilog HDL or VHDL warning at SCCBRegisterTable.vhd(47): object "STrigRising" assigned a value but never read File: /home/ibrahimvarola/OneDrive/bitirme_proje/programlar/quartus/implementations/cam-to-vga/src/SCCBRegisterTable.vhd Line: 47
-Info (12128): Elaborating entity "SCCBMaster" for hierarchy "OV7670Controller:INST_CONTROLLER|SCCBMaster:INST_I2C" File: /home/ibrahimvarola/OneDrive/bitirme_proje/programlar/quartus/implementations/cam-to-vga/src/OV7670Controller.vhd Line: 111
-Warning (10036): Verilog HDL or VHDL warning at SCCBMaster.vhd(95): object "SCounter" assigned a value but never read File: /home/ibrahimvarola/OneDrive/bitirme_proje/programlar/quartus/implementations/cam-to-vga/src/SCCBMaster.vhd Line: 95
-Info (10041): Inferred latch for "SStartReg" at SCCBMaster.vhd(119) File: /home/ibrahimvarola/OneDrive/bitirme_proje/programlar/quartus/implementations/cam-to-vga/src/SCCBMaster.vhd Line: 119
-Info (12128): Elaborating entity "OV7670Capture" for hierarchy "OV7670Capture:INST_CAPTURE" File: /home/ibrahimvarola/OneDrive/bitirme_proje/programlar/quartus/implementations/cam-to-vga/src/top_controller.vhd Line: 217
-Warning (10036): Verilog HDL or VHDL warning at OV7670Capture.vhd(34): object "SHRefCounterInt" assigned a value but never read File: /home/ibrahimvarola/OneDrive/bitirme_proje/programlar/quartus/implementations/cam-to-vga/src/OV7670Capture.vhd Line: 34
-Info (12128): Elaborating entity "OV7670FrameBuffer" for hierarchy "OV7670FrameBuffer:INST_FRAMEBUFF" File: /home/ibrahimvarola/OneDrive/bitirme_proje/programlar/quartus/implementations/cam-to-vga/src/top_controller.vhd Line: 229
-Info (12128): Elaborating entity "DualPortRAM" for hierarchy "OV7670FrameBuffer:INST_FRAMEBUFF|DualPortRAM:INST_TOP" File: /home/ibrahimvarola/OneDrive/bitirme_proje/programlar/quartus/implementations/cam-to-vga/src/OV7670FrameBuffer.vhd Line: 41
-Info (12128): Elaborating entity "altsyncram" for hierarchy "OV7670FrameBuffer:INST_FRAMEBUFF|DualPortRAM:INST_TOP|altsyncram:altsyncram_component" File: /home/ibrahimvarola/OneDrive/bitirme_proje/programlar/quartus/implementations/cam-to-vga/ip/DualPortRAM.vhd Line: 64
-Info (12130): Elaborated megafunction instantiation "OV7670FrameBuffer:INST_FRAMEBUFF|DualPortRAM:INST_TOP|altsyncram:altsyncram_component" File: /home/ibrahimvarola/OneDrive/bitirme_proje/programlar/quartus/implementations/cam-to-vga/ip/DualPortRAM.vhd Line: 64
-Info (12133): Instantiated megafunction "OV7670FrameBuffer:INST_FRAMEBUFF|DualPortRAM:INST_TOP|altsyncram:altsyncram_component" with the following parameter: File: /home/ibrahimvarola/OneDrive/bitirme_proje/programlar/quartus/implementations/cam-to-vga/ip/DualPortRAM.vhd Line: 64
+Info (12128): Elaborating entity "OV7670Controller" for hierarchy "OV7670Controller:INST_CONTROLLER" File: /home/ibrahimvarola/Desktop/github/OV7670-Implementations/cam-to-vga/src/top_controller.vhd Line: 232
+Info (12128): Elaborating entity "SCCBRegisterTable" for hierarchy "OV7670Controller:INST_CONTROLLER|SCCBRegisterTable:INST_REG" File: /home/ibrahimvarola/Desktop/github/OV7670-Implementations/cam-to-vga/src/OV7670Controller.vhd Line: 96
+Warning (10036): Verilog HDL or VHDL warning at SCCBRegisterTable.vhd(36): object "SDone" assigned a value but never read File: /home/ibrahimvarola/Desktop/github/OV7670-Implementations/cam-to-vga/src/SCCBRegisterTable.vhd Line: 36
+Warning (10036): Verilog HDL or VHDL warning at SCCBRegisterTable.vhd(47): object "STrigRising" assigned a value but never read File: /home/ibrahimvarola/Desktop/github/OV7670-Implementations/cam-to-vga/src/SCCBRegisterTable.vhd Line: 47
+Info (12128): Elaborating entity "SCCBMaster" for hierarchy "OV7670Controller:INST_CONTROLLER|SCCBMaster:INST_I2C" File: /home/ibrahimvarola/Desktop/github/OV7670-Implementations/cam-to-vga/src/OV7670Controller.vhd Line: 111
+Warning (10036): Verilog HDL or VHDL warning at SCCBMaster.vhd(95): object "SCounter" assigned a value but never read File: /home/ibrahimvarola/Desktop/github/OV7670-Implementations/cam-to-vga/src/SCCBMaster.vhd Line: 95
+Info (10041): Inferred latch for "SStartReg" at SCCBMaster.vhd(119) File: /home/ibrahimvarola/Desktop/github/OV7670-Implementations/cam-to-vga/src/SCCBMaster.vhd Line: 119
+Info (12128): Elaborating entity "OV7670Capture" for hierarchy "OV7670Capture:INST_CAPTURE" File: /home/ibrahimvarola/Desktop/github/OV7670-Implementations/cam-to-vga/src/top_controller.vhd Line: 245
+Warning (10036): Verilog HDL or VHDL warning at OV7670Capture.vhd(34): object "SHRefCounterInt" assigned a value but never read File: /home/ibrahimvarola/Desktop/github/OV7670-Implementations/cam-to-vga/src/OV7670Capture.vhd Line: 34
+Info (12128): Elaborating entity "OV7670FrameBuffer" for hierarchy "OV7670FrameBuffer:INST_FRAMEBUFF" File: /home/ibrahimvarola/Desktop/github/OV7670-Implementations/cam-to-vga/src/top_controller.vhd Line: 257
+Info (12128): Elaborating entity "DualPortRAM" for hierarchy "OV7670FrameBuffer:INST_FRAMEBUFF|DualPortRAM:INST_TOP" File: /home/ibrahimvarola/Desktop/github/OV7670-Implementations/cam-to-vga/src/OV7670FrameBuffer.vhd Line: 39
+Info (12128): Elaborating entity "altsyncram" for hierarchy "OV7670FrameBuffer:INST_FRAMEBUFF|DualPortRAM:INST_TOP|altsyncram:altsyncram_component" File: /home/ibrahimvarola/Desktop/github/OV7670-Implementations/cam-to-vga/ip/DualPortRAM.vhd Line: 64
+Info (12130): Elaborated megafunction instantiation "OV7670FrameBuffer:INST_FRAMEBUFF|DualPortRAM:INST_TOP|altsyncram:altsyncram_component" File: /home/ibrahimvarola/Desktop/github/OV7670-Implementations/cam-to-vga/ip/DualPortRAM.vhd Line: 64
+Info (12133): Instantiated megafunction "OV7670FrameBuffer:INST_FRAMEBUFF|DualPortRAM:INST_TOP|altsyncram:altsyncram_component" with the following parameter: File: /home/ibrahimvarola/Desktop/github/OV7670-Implementations/cam-to-vga/ip/DualPortRAM.vhd Line: 64
     Info (12134): Parameter "address_aclr_a" = "UNUSED"
     Info (12134): Parameter "address_aclr_b" = "NONE"
     Info (12134): Parameter "address_reg_b" = "CLOCK1"
@@ -1203,31 +1211,31 @@ Info (12133): Instantiated megafunction "OV7670FrameBuffer:INST_FRAMEBUFF|DualPo
     Info (12134): Parameter "lpm_hint" = "UNUSED"
     Info (12134): Parameter "lpm_type" = "altsyncram"
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_iip3.tdf
-    Info (12023): Found entity 1: altsyncram_iip3 File: /home/ibrahimvarola/OneDrive/bitirme_proje/programlar/quartus/implementations/cam-to-vga/db/altsyncram_iip3.tdf Line: 34
+    Info (12023): Found entity 1: altsyncram_iip3 File: /home/ibrahimvarola/Desktop/github/OV7670-Implementations/cam-to-vga/db/altsyncram_iip3.tdf Line: 34
 Info (12128): Elaborating entity "altsyncram_iip3" for hierarchy "OV7670FrameBuffer:INST_FRAMEBUFF|DualPortRAM:INST_TOP|altsyncram:altsyncram_component|altsyncram_iip3:auto_generated" File: /home/ibrahimvarola/intelFPGA/22.1std/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
 Info (12021): Found 1 design units, including 1 entities, in source file db/decode_rsa.tdf
-    Info (12023): Found entity 1: decode_rsa File: /home/ibrahimvarola/OneDrive/bitirme_proje/programlar/quartus/implementations/cam-to-vga/db/decode_rsa.tdf Line: 23
-Info (12128): Elaborating entity "decode_rsa" for hierarchy "OV7670FrameBuffer:INST_FRAMEBUFF|DualPortRAM:INST_TOP|altsyncram:altsyncram_component|altsyncram_iip3:auto_generated|decode_rsa:decode2" File: /home/ibrahimvarola/OneDrive/bitirme_proje/programlar/quartus/implementations/cam-to-vga/db/altsyncram_iip3.tdf Line: 46
+    Info (12023): Found entity 1: decode_rsa File: /home/ibrahimvarola/Desktop/github/OV7670-Implementations/cam-to-vga/db/decode_rsa.tdf Line: 23
+Info (12128): Elaborating entity "decode_rsa" for hierarchy "OV7670FrameBuffer:INST_FRAMEBUFF|DualPortRAM:INST_TOP|altsyncram:altsyncram_component|altsyncram_iip3:auto_generated|decode_rsa:decode2" File: /home/ibrahimvarola/Desktop/github/OV7670-Implementations/cam-to-vga/db/altsyncram_iip3.tdf Line: 46
 Info (12021): Found 1 design units, including 1 entities, in source file db/decode_k8a.tdf
-    Info (12023): Found entity 1: decode_k8a File: /home/ibrahimvarola/OneDrive/bitirme_proje/programlar/quartus/implementations/cam-to-vga/db/decode_k8a.tdf Line: 23
-Info (12128): Elaborating entity "decode_k8a" for hierarchy "OV7670FrameBuffer:INST_FRAMEBUFF|DualPortRAM:INST_TOP|altsyncram:altsyncram_component|altsyncram_iip3:auto_generated|decode_k8a:rden_decode_b" File: /home/ibrahimvarola/OneDrive/bitirme_proje/programlar/quartus/implementations/cam-to-vga/db/altsyncram_iip3.tdf Line: 47
+    Info (12023): Found entity 1: decode_k8a File: /home/ibrahimvarola/Desktop/github/OV7670-Implementations/cam-to-vga/db/decode_k8a.tdf Line: 23
+Info (12128): Elaborating entity "decode_k8a" for hierarchy "OV7670FrameBuffer:INST_FRAMEBUFF|DualPortRAM:INST_TOP|altsyncram:altsyncram_component|altsyncram_iip3:auto_generated|decode_k8a:rden_decode_b" File: /home/ibrahimvarola/Desktop/github/OV7670-Implementations/cam-to-vga/db/altsyncram_iip3.tdf Line: 47
 Info (12021): Found 1 design units, including 1 entities, in source file db/mux_mob.tdf
-    Info (12023): Found entity 1: mux_mob File: /home/ibrahimvarola/OneDrive/bitirme_proje/programlar/quartus/implementations/cam-to-vga/db/mux_mob.tdf Line: 23
-Info (12128): Elaborating entity "mux_mob" for hierarchy "OV7670FrameBuffer:INST_FRAMEBUFF|DualPortRAM:INST_TOP|altsyncram:altsyncram_component|altsyncram_iip3:auto_generated|mux_mob:mux3" File: /home/ibrahimvarola/OneDrive/bitirme_proje/programlar/quartus/implementations/cam-to-vga/db/altsyncram_iip3.tdf Line: 49
-Info (12128): Elaborating entity "RAMReader" for hierarchy "RAMReader:INST_READER" File: /home/ibrahimvarola/OneDrive/bitirme_proje/programlar/quartus/implementations/cam-to-vga/src/top_controller.vhd Line: 242
-Info (12128): Elaborating entity "VGA" for hierarchy "VGA:INST_VGA" File: /home/ibrahimvarola/OneDrive/bitirme_proje/programlar/quartus/implementations/cam-to-vga/src/top_controller.vhd Line: 255
+    Info (12023): Found entity 1: mux_mob File: /home/ibrahimvarola/Desktop/github/OV7670-Implementations/cam-to-vga/db/mux_mob.tdf Line: 23
+Info (12128): Elaborating entity "mux_mob" for hierarchy "OV7670FrameBuffer:INST_FRAMEBUFF|DualPortRAM:INST_TOP|altsyncram:altsyncram_component|altsyncram_iip3:auto_generated|mux_mob:mux3" File: /home/ibrahimvarola/Desktop/github/OV7670-Implementations/cam-to-vga/db/altsyncram_iip3.tdf Line: 49
+Info (12128): Elaborating entity "RAMReader" for hierarchy "RAMReader:INST_READER" File: /home/ibrahimvarola/Desktop/github/OV7670-Implementations/cam-to-vga/src/top_controller.vhd Line: 279
+Info (12128): Elaborating entity "VGA" for hierarchy "VGA:INST_VGA" File: /home/ibrahimvarola/Desktop/github/OV7670-Implementations/cam-to-vga/src/top_controller.vhd Line: 308
 Info (276014): Found 1 instances of uninferred RAM logic
-    Info (276004): RAM logic "OV7670Controller:INST_CONTROLLER|SCCBRegisterTable:INST_REG|Ram0" is uninferred due to inappropriate RAM size File: /home/ibrahimvarola/OneDrive/bitirme_proje/programlar/quartus/implementations/cam-to-vga/src/SCCBRegisterTable.vhd Line: 128
-Info (13000): Registers with preset signals will power-up high File: /home/ibrahimvarola/OneDrive/bitirme_proje/programlar/quartus/implementations/cam-to-vga/src/SCCBMaster.vhd Line: 85
+    Info (276004): RAM logic "OV7670Controller:INST_CONTROLLER|SCCBRegisterTable:INST_REG|Ram0" is uninferred due to inappropriate RAM size File: /home/ibrahimvarola/Desktop/github/OV7670-Implementations/cam-to-vga/src/SCCBRegisterTable.vhd Line: 128
+Info (13000): Registers with preset signals will power-up high File: /home/ibrahimvarola/Desktop/github/OV7670-Implementations/cam-to-vga/src/SCCBMaster.vhd Line: 85
 Info (13003): DEV_CLRn pin will set, and not reset, register with preset signal due to NOT Gate Push-Back
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "POVGASync" is stuck at VCC File: /home/ibrahimvarola/OneDrive/bitirme_proje/programlar/quartus/implementations/cam-to-vga/src/top_controller.vhd Line: 20
-    Warning (13410): Pin "POCamPWDN" is stuck at GND File: /home/ibrahimvarola/OneDrive/bitirme_proje/programlar/quartus/implementations/cam-to-vga/src/top_controller.vhd Line: 27
-    Warning (13410): Pin "POCamReset" is stuck at VCC File: /home/ibrahimvarola/OneDrive/bitirme_proje/programlar/quartus/implementations/cam-to-vga/src/top_controller.vhd Line: 28
+    Warning (13410): Pin "POVGASync" is stuck at VCC File: /home/ibrahimvarola/Desktop/github/OV7670-Implementations/cam-to-vga/src/top_controller.vhd Line: 20
+    Warning (13410): Pin "POCamPWDN" is stuck at GND File: /home/ibrahimvarola/Desktop/github/OV7670-Implementations/cam-to-vga/src/top_controller.vhd Line: 27
+    Warning (13410): Pin "POCamReset" is stuck at VCC File: /home/ibrahimvarola/Desktop/github/OV7670-Implementations/cam-to-vga/src/top_controller.vhd Line: 28
 Info (286030): Timing-Driven Synthesis is running
 Critical Warning (18061): Ignored Power-Up Level option on the following registers
-    Critical Warning (18010): Register OV7670Controller:INST_CONTROLLER|SCCBMaster:INST_I2C|SSIOCWrite will power up to High File: /home/ibrahimvarola/OneDrive/bitirme_proje/programlar/quartus/implementations/cam-to-vga/src/SCCBMaster.vhd Line: 85
-    Critical Warning (18010): Register OV7670Controller:INST_CONTROLLER|SCCBMaster:INST_I2C|SSIODWrite~en will power up to Low File: /home/ibrahimvarola/OneDrive/bitirme_proje/programlar/quartus/implementations/cam-to-vga/src/SCCBMaster.vhd Line: 83
+    Critical Warning (18010): Register OV7670Controller:INST_CONTROLLER|SCCBMaster:INST_I2C|SSIOCWrite will power up to High File: /home/ibrahimvarola/Desktop/github/OV7670-Implementations/cam-to-vga/src/SCCBMaster.vhd Line: 85
+    Critical Warning (18010): Register OV7670Controller:INST_CONTROLLER|SCCBMaster:INST_I2C|SSIODWrite~en will power up to Low File: /home/ibrahimvarola/Desktop/github/OV7670-Implementations/cam-to-vga/src/SCCBMaster.vhd Line: 83
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 1 node(s), including 0 DDIO, 1 PLL, 0 transceiver and 0 LCELL
 Info (21057): Implemented 803 device resources after synthesis - the final resource count might be different
@@ -1238,9 +1246,9 @@ Info (21057): Implemented 803 device resources after synthesis - the final resou
     Info (21064): Implemented 192 RAM segments
     Info (21065): Implemented 1 PLLs
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 12 warnings
-    Info: Peak virtual memory: 486 megabytes
-    Info: Processing ended: Wed Feb  1 09:50:09 2023
-    Info: Elapsed time: 00:00:11
-    Info: Total CPU time (on all processors): 00:00:24
+    Info: Peak virtual memory: 469 megabytes
+    Info: Processing ended: Wed Feb  1 13:32:00 2023
+    Info: Elapsed time: 00:00:10
+    Info: Total CPU time (on all processors): 00:00:23
 
 

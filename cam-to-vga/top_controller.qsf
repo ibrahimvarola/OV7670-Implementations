@@ -60,24 +60,14 @@ set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
-set_global_assignment -name QIP_FILE ip/pll.qip
-set_global_assignment -name VHDL_FILE src/RAMReader.vhd
-set_global_assignment -name VHDL_FILE src/OV7670FrameBuffer.vhd
-set_global_assignment -name VHDL_FILE src/OV7670Capture.vhd
-set_global_assignment -name VHDL_FILE src/vga_controller.vhd
-set_global_assignment -name VHDL_FILE src/SCCBRegisterTable.vhd -hdl_version VHDL_2008
-set_global_assignment -name VHDL_FILE src/SCCBMaster.vhd -hdl_version VHDL_2008
-set_global_assignment -name VHDL_FILE src/top_controller.vhd
-set_global_assignment -name VHDL_FILE src/OV7670Controller.vhd
-set_global_assignment -name QIP_FILE ip/DualPortRAM.qip
-set_location_assignment PIN_AB22 -to PICamData[7]
-set_location_assignment PIN_AC15 -to PICamData[6]
-set_location_assignment PIN_AB21 -to PICamData[5]
-set_location_assignment PIN_Y17 -to PICamData[4]
-set_location_assignment PIN_AC21 -to PICamData[3]
-set_location_assignment PIN_Y16 -to PICamData[2]
-set_location_assignment PIN_AD21 -to PICamData[1]
-set_location_assignment PIN_AE16 -to PICamData[0]
+set_location_assignment PIN_AE16 -to PICamData[7]
+set_location_assignment PIN_AD21 -to PICamData[6]
+set_location_assignment PIN_Y16 -to PICamData[5]
+set_location_assignment PIN_AC21 -to PICamData[4]
+set_location_assignment PIN_Y17 -to PICamData[3]
+set_location_assignment PIN_AB21 -to PICamData[2]
+set_location_assignment PIN_AC15 -to PICamData[1]
+set_location_assignment PIN_AB22 -to PICamData[0]
 set_location_assignment PIN_AC22 -to PICamHREF
 set_location_assignment PIN_AC19 -to PICamPCLK
 set_location_assignment PIN_AF24 -to POCamSIOC
@@ -88,32 +78,32 @@ set_location_assignment PIN_M23 -to PIResendCfg
 set_location_assignment PIN_M21 -to PIReset
 set_location_assignment PIN_E21 -to POCfgFinished
 set_location_assignment PIN_F11 -to POVGABlank
-set_location_assignment PIN_B10 -to POVGABlue[7]
-set_location_assignment PIN_A10 -to POVGABlue[6]
-set_location_assignment PIN_C11 -to POVGABlue[5]
-set_location_assignment PIN_B11 -to POVGABlue[4]
-set_location_assignment PIN_A11 -to POVGABlue[3]
-set_location_assignment PIN_C12 -to POVGABlue[2]
-set_location_assignment PIN_D11 -to POVGABlue[1]
-set_location_assignment PIN_D12 -to POVGABlue[0]
+set_location_assignment PIN_D12 -to POVGABlue[7]
+set_location_assignment PIN_D11 -to POVGABlue[6]
+set_location_assignment PIN_C12 -to POVGABlue[5]
+set_location_assignment PIN_A11 -to POVGABlue[4]
+set_location_assignment PIN_B11 -to POVGABlue[3]
+set_location_assignment PIN_C11 -to POVGABlue[2]
+set_location_assignment PIN_A10 -to POVGABlue[1]
+set_location_assignment PIN_B10 -to POVGABlue[0]
 set_location_assignment PIN_A12 -to POVGAClock
-set_location_assignment PIN_G8 -to POVGAGreen[7]
-set_location_assignment PIN_G11 -to POVGAGreen[6]
-set_location_assignment PIN_F8 -to POVGAGreen[5]
-set_location_assignment PIN_H12 -to POVGAGreen[4]
-set_location_assignment PIN_C8 -to POVGAGreen[3]
-set_location_assignment PIN_B8 -to POVGAGreen[2]
-set_location_assignment PIN_F10 -to POVGAGreen[1]
-set_location_assignment PIN_C9 -to POVGAGreen[0]
+set_location_assignment PIN_C9 -to POVGAGreen[7]
+set_location_assignment PIN_F10 -to POVGAGreen[6]
+set_location_assignment PIN_B8 -to POVGAGreen[5]
+set_location_assignment PIN_C8 -to POVGAGreen[4]
+set_location_assignment PIN_H12 -to POVGAGreen[3]
+set_location_assignment PIN_F8 -to POVGAGreen[2]
+set_location_assignment PIN_G11 -to POVGAGreen[1]
+set_location_assignment PIN_G8 -to POVGAGreen[0]
 set_location_assignment PIN_G13 -to POVGAHSync
-set_location_assignment PIN_E12 -to POVGARed[7]
-set_location_assignment PIN_E11 -to POVGARed[6]
-set_location_assignment PIN_D10 -to POVGARed[5]
-set_location_assignment PIN_F12 -to POVGARed[4]
-set_location_assignment PIN_G10 -to POVGARed[3]
-set_location_assignment PIN_J12 -to POVGARed[2]
-set_location_assignment PIN_H8 -to POVGARed[1]
-set_location_assignment PIN_H10 -to POVGARed[0]
+set_location_assignment PIN_H10 -to POVGARed[7]
+set_location_assignment PIN_H8 -to POVGARed[6]
+set_location_assignment PIN_J12 -to POVGARed[5]
+set_location_assignment PIN_G10 -to POVGARed[4]
+set_location_assignment PIN_F12 -to POVGARed[3]
+set_location_assignment PIN_D10 -to POVGARed[2]
+set_location_assignment PIN_E11 -to POVGARed[1]
+set_location_assignment PIN_E12 -to POVGARed[0]
 set_location_assignment PIN_C10 -to POVGASync
 set_location_assignment PIN_C13 -to POVGAVSync
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to PIClock
@@ -159,11 +149,24 @@ set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to POVGARed[0]
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to POVGASync
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to POVGAVSync
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to POCamSIOC
-set_global_assignment -name VHDL_FILE src/VGA.vhd
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to POCamPWDN
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to POCamReset
 set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to POCamXCLK
 set_location_assignment PIN_AD19 -to POCamPWDN
 set_location_assignment PIN_AF15 -to POCamReset
 set_location_assignment PIN_AF16 -to POCamXCLK
+set_global_assignment -name VHDL_FILE src/frame_buffer.vhd
+set_global_assignment -name VHDL_FILE src/RGB.vhd
+set_global_assignment -name VHDL_FILE src/address_Generator.vhd
+set_global_assignment -name QIP_FILE ip/pll.qip
+set_global_assignment -name VHDL_FILE src/RAMReader.vhd
+set_global_assignment -name VHDL_FILE src/OV7670FrameBuffer.vhd
+set_global_assignment -name VHDL_FILE src/OV7670Capture.vhd
+set_global_assignment -name VHDL_FILE src/vga_controller.vhd
+set_global_assignment -name VHDL_FILE src/SCCBRegisterTable.vhd -hdl_version VHDL_2008
+set_global_assignment -name VHDL_FILE src/SCCBMaster.vhd -hdl_version VHDL_2008
+set_global_assignment -name VHDL_FILE src/top_controller.vhd
+set_global_assignment -name VHDL_FILE src/OV7670Controller.vhd
+set_global_assignment -name QIP_FILE ip/DualPortRAM.qip
+set_global_assignment -name VHDL_FILE src/VGA.vhd
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
